@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/x-icon" href="/imgs/favicon.png" />
     <title>sketch</title>
@@ -10,46 +16,31 @@
   <body>
     <div id="outer-container">
       <div id="header">
-        <h1>Etch A Sketch</h1>
+        <h1>Etch-A-Sketch</h1>
       </div>
       <div id="screen">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+        <!-- <div class="dynamic-div"></div> -->
       </div>
       <div id="options">
-        <button>Black</button>
-        <button>Gray</button>
-        <button>Rgb</button>
-        <button>Erase</button>
-        <button>Reset</button>
+        <button id="black">Dark</button>
+        <button id="white">Light</button>
+        <button id="rgb">Rgb</button>
+        <button id="eraser">Eraser</button>
+        <button id="resetBtn">Reset</button>
       </div>
-      <div id="resize-container">
-        <input type="text" id="user-input" />
-        <button>Resize</button>
-      </div>
+      <!-- <div id="resize-container">
+        <label for="user-input">Width:</label>
+        <input
+          type="number"
+          id="user-input"
+          placeholder="30"
+          autocomplete="off"
+          min="10"
+          max="60"
+        />
+        <button id="resize-btn">Resize</button>
+        <p id="msg">min is 10x10, max is 80x80</p>
+      </div> -->
     </div>
     <script src="app.js"></script>
   </body>
